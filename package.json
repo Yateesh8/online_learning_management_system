@@ -1,0 +1,21 @@
+{
+  "name": "olms-v2",
+  "version": "1.0.0",
+  "description": "Online Learning Management System Root",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"npm run start-backend\" \"npm run start-frontend\"",
+    "dev": "concurrently \"npm run dev-backend\" \"npm run dev-frontend\"",
+    "start-backend": "cd backend && npm start",
+    "dev-backend": "cd backend && npm run dev",
+    "start-frontend": "cd frontend && npm start",
+    "dev-frontend": "cd frontend && npm run dev",
+    "install-all": "npm install && cd backend && npm install && cd ../frontend && npm install"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
