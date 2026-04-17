@@ -406,10 +406,6 @@ This project is licensed under the **MIT License** — see the [LICENSE](LICENSE
 
 **Yateesh Gangwar**
 
-[![GitHub](https://img.shields.io/badge/GitHub-Yateesh8-181717?style=for-the-badge&logo=github)](https://github.com/Yateesh8)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-yateesh-gangwar-8b1033296/-0A66C2?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/yateesh-gangwar-8b1033296/)
-
-
 > *"Built with curiosity, shipped with caffeine."* ☕
 
 </div>
