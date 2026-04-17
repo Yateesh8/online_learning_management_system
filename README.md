@@ -416,6 +416,6 @@ This project is licensed under the **MIT License** — see the [LICENSE](LICENSE
 
 ⭐ If you found this project helpful, please consider giving it a **star** on GitHub — it helps a lot!
 
-Made with ❤️ by [Your Name](https://github.com/Yateesh8)
+Made with ❤️
 
 </div>
