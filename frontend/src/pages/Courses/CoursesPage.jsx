@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import API from "../../api/api";
-import ProgressBar from "../../components/common/ProgressBar";
 import Tag from "../../components/common/Tag";
 
 export default function CoursesPage({ setPage, setActiveCourse }) {

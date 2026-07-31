@@ -1,8 +1,5 @@
 import React, { useState, useEffect } from "react";
 import API from "../../api/api";
-import ProgressBar from "../../components/common/ProgressBar";
-import Avatar from "../../components/common/Avatar";
-import Tag from "../../components/common/Tag";
 
 // Toast Notification Sub-component
 const Toast = ({ message, type = "success", onClose }) => {
