@@ -89,10 +89,10 @@ const seedDatabase = async () => {
     const enrollments = [];
     for (let course of createdCourses) {
       if (Math.random() > 0.1) {
-         enrollments.push({ user: student1._id, course: course._id, progress: Math.floor(Math.random() * 100) });
+        enrollments.push({ user: student1._id, course: course._id, progress: Math.floor(Math.random() * 100) });
       }
     }
-    
+
     // Add some random enrollments for other students
     enrollments.push({ user: student2._id, course: createdCourses[0]._id, progress: 12 });
     enrollments.push({ user: student3._id, course: createdCourses[1]._id, progress: 100 });
@@ -102,17 +102,17 @@ const seedDatabase = async () => {
     const Lecture = require("./src/models/Lecture");
     await Lecture.deleteMany({});
     const lecturesToInsert = [];
-    
+
     for (let course of createdCourses) {
-       for (let i = 1; i <= 3; i++) {
-          lecturesToInsert.push({
-             title: `Module ${i}: Core Concepts of ${course.title.split(" ")[0] || "Topic"}`,
-             videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
-             duration: Math.floor(Math.random() * 10) + 5,
-             course: course._id,
-             order: i
-          });
-       }
+      for (let i = 1; i <= 3; i++) {
+        lecturesToInsert.push({
+          title: `Module ${i}: Core Concepts of ${course.title.split(" ")[0] || "Topic"}`,
+          videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+          duration: Math.floor(Math.random() * 10) + 5,
+          course: course._id,
+          order: i
+        });
+      }
     }
     await Lecture.insertMany(lecturesToInsert);
 
