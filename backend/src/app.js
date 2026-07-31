@@ -11,15 +11,23 @@ app.use(express.json());
 app.use(cookieParser());
 
 // CORS
-const getCorsOrigins = () => {
-  const url = process.env.FRONTEND_URL;
-  if (!url) return "http://localhost:3000";
-  return url.includes(",") ? url.split(",").map(item => item.trim()) : url;
-};
+const allowedOrigins = process.env.FRONTEND_URL
+  ? process.env.FRONTEND_URL.split(",").map(item => item.trim())
+  : [];
 
 app.use(
   cors({
-    origin: getCorsOrigins(),
+    origin: function (origin, callback) {
+      if (!origin) return callback(null, true);
+      if (
+        origin.startsWith("http://localhost:") ||
+        allowedOrigins.includes(origin) ||
+        origin.endsWith(".vercel.app")
+      ) {
+        return callback(null, true);
+      }
+      return callback(new Error("Not allowed by CORS"));
+    },
     credentials: true,
   }),
 );
