@@ -13,10 +13,16 @@ const startServer = async () => {
 
     const server = http.createServer(app);
 
+    const getCorsOrigins = () => {
+      const url = process.env.FRONTEND_URL;
+      if (!url) return "http://localhost:3000";
+      return url.includes(",") ? url.split(",").map(item => item.trim()) : url;
+    };
+
     // socket setup
     const io = new Server(server, {
       cors: {
-        origin: process.env.FRONTEND_URL || "http://localhost:3000",
+        origin: getCorsOrigins(),
         credentials: true,
       },
     });
