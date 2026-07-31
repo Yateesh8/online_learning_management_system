@@ -32,8 +32,8 @@ exports.registerUser = async (req, res) => {
     // SET COOKIE
     res.cookie("token", token, {
       httpOnly: true,
-      secure: false,
-      sameSite: "lax",
+      secure: process.env.NODE_ENV === "production",
+      sameSite: process.env.NODE_ENV === "production" ? "none" : "lax",
     });
 
     // SEND RESPONSE
@@ -73,8 +73,8 @@ exports.loginUser = async (req, res) => {
     // SET COOKIE
     res.cookie("token", token, {
       httpOnly: true,
-      secure: false,
-      sameSite: "lax",
+      secure: process.env.NODE_ENV === "production",
+      sameSite: process.env.NODE_ENV === "production" ? "none" : "lax",
     });
 
     // SEND RESPONSE (NO TOKEN)
