@@ -14,7 +14,7 @@ const startServer = async () => {
     const server = http.createServer(app);
 
     const allowedOrigins = process.env.FRONTEND_URL
-      ? process.env.FRONTEND_URL.split(",").map(item => item.trim())
+      ? process.env.FRONTEND_URL.split(",").map(item => item.trim().replace(/\/$/, ""))
       : [];
 
     // socket setup
@@ -22,10 +22,11 @@ const startServer = async () => {
       cors: {
         origin: function (origin, callback) {
           if (!origin) return callback(null, true);
+          const normalizedOrigin = origin.replace(/\/$/, "");
           if (
-            origin.startsWith("http://localhost:") ||
-            allowedOrigins.includes(origin) ||
-            origin.endsWith(".vercel.app")
+            normalizedOrigin.startsWith("http://localhost:") ||
+            allowedOrigins.includes(normalizedOrigin) ||
+            normalizedOrigin.endsWith(".vercel.app")
           ) {
             return callback(null, true);
           }
