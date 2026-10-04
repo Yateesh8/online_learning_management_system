@@ -44,8 +44,8 @@ Built with a **Node.js + Express** backend, **React.js** frontend, and **MongoDB
 
 | Service    | URL                                              |
 |------------|--------------------------------------------------|
-| 🌐 Frontend | [LearnOS](https://learnos-yateesh.vercel.app/) |
-| 🔗 Backend | [LearnOS API](https://learnos-api.railway.app) |
+| 🌐 Frontend | [https://learnos-yateesh.vercel.app/](https://learnos-yateesh.vercel.app/) |
+| 🔗 Backend  | [https://learnos-api.railway.app](https://learnos-api.railway.app) |
 
 > ⚠️ The backend may take a few seconds to respond on first load (cold start on Railway free tier).
 
