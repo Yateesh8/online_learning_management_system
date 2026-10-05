@@ -8,7 +8,7 @@
 
 **A modern, full-stack Learning Management System built for students, instructors, and admins — all in one platform.**
 
-[🌐 Live Frontend](https://learnos.vercel.app) · [🔗 Backend API](https://learnos-api.railway.app) · [📖 API Docs](#-api-overview) · [🐛 Report Bug](https://github.com/yourusername/learnos/issues)
+[🌐 Live Frontend](https://learnos-yateesh.vercel.app/) · [🔗 Backend API](https://learnos-api.railway.app) · [📖 API Docs](#-api-overview) · [🐛 Report Bug](https://github.com/yourusername/learnos/issues)
 
 </div>
 
