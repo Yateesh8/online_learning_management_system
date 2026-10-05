@@ -78,7 +78,7 @@ Built with a **Node.js + Express** backend, **React.js** frontend, and **MongoDB
 | Service   | Usage                  |
 |-----------|------------------------|
 | Vercel    | Frontend hosting       |
-| Railway   | Backend + DB hosting   |
+| Render    | Backend hosting        |
 | MongoDB Atlas | Cloud database     |
 
 ---
