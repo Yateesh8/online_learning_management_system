@@ -213,8 +213,8 @@ Make sure you have the following installed:
 ### 📥 Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/learnos.git
-cd learnos
+git clone https://github.com/Yateesh8/online_learning_management_system.git
+cd online_learning_management_system
 ```
 
 ---
