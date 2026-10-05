@@ -8,7 +8,7 @@
 
 **A modern, full-stack Learning Management System built for students, instructors, and admins — all in one platform.**
 
-[🌐 Live Frontend](https://learnos-yateesh.vercel.app/) · [🔗 Backend API](https://learnos-api.railway.app) · [📖 API Docs](#-api-overview) · [🐛 Report Bug](https://github.com/yourusername/learnos/issues)
+[🌐 Live Frontend](https://learnos-yateesh.vercel.app/) · [🔗 Backend API](https://online-learning-management-system-jmzv.onrender.com) · [📖 API Docs](#-api-overview) · [🐛 Report Bug](https://github.com/Yateesh8/online_learning_management_system/issues)
 
 </div>
 
@@ -45,10 +45,9 @@ Built with a **Node.js + Express** backend, **React.js** frontend, and **MongoDB
 | Service    | URL                                              |
 |------------|--------------------------------------------------|
 | 🌐 Frontend | [https://learnos-yateesh.vercel.app/](https://learnos-yateesh.vercel.app/) |
-| 🔗 Backend  | [https://learnos-api.railway.app](https://learnos-api.railway.app) |
+| 🔗 Backend  | [https://online-learning-management-system-jmzv.onrender.com](https://online-learning-management-system-jmzv.onrender.com) |
 
-> ⚠️ The backend may take a few seconds to respond on first load (cold start on Railway free tier).
-
+> ⚠️ The backend may take a few seconds to respond on first load (cold start on Render free tier).
 ---
 
 ## 🛠️ Tech Stack
